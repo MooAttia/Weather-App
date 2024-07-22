@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-expand-lg  container-fluid">
+      <div class="container d-flex align-items-baseline py-4">
+        <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-cloud fa-3x"></i> Weather</a>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0">
+            <li class="nav-item px-3 ">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-3 ">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="section">
+    <div class="container py-5">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control search rounded-5 w-100 mb-3 py-3 " placeholder="Find your location...">
+      </div>
+    </div>
+    <div class="container py-2 d-flex">
+      <div class="today text-white ">
+        <div class="day d-flex justify-content-between p-2 pb-0">
+          <p class="dayName">Sunday</p>
+          <div class="d-flex">
+            <p class="date">19</p><p class="month"> July</p>
+          </div>
+        </div>
+        <div class="content p-3 pb-5">
+          <p class="h4 TodayLocation"> Cairo </p>
+          <div class="degree TodayTemp px-3 ">
+            <p> 37.2°C</p>
+          </div>
+          <div class="todayImage px-5">
+            <img class="todayIcon" src="" alt="">
+          </div>
+          <div class="description p-3 text-primary">Sunny</div>
+          <div class="wind px-3">
+            <i class="todayHumidity fa-solid fa-umbrella"> 20%</i>
+            <i class="todayWind fa-solid fa-wind px-2">18Km/h</i>
+            <i class="todaydirection fa-regular fa-compass px-2">east</i>
+          </div>
+        </div>
+      </div>
+      <div class="tomorrow text-white ">
+        <div class="dayTom p-2 py-1 text-center  ">
+          <p class="tomDay">Saturday</p>
+        </div>
+        <div class="contentTom p-3 pb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="icon py-4">
+            <img class="tomImage" src="" alt="">
+          </div>
+          <div class="degreeTomHigh pt-4 ">
+            <p class="h3 tomHighDegree"> 37.2°C</p>
+          </div>
+          <div class="degreeTomLow">
+            <p class="h6 tomLowDegree"> 37.2°C</p>
+          </div>
+          <div class="tomDescription p-3 text-primary">Sunny</div>
+        </div>
+      </div>
+      <div class="afterTom text-white ">
+        <div class="dayAfter p-2 py-1 text-center  ">
+          <p class="afterDay">Sunday</p>
+        </div>
+        <div class="contentAfter p-3 pb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="icon py-4">
+            <img class="afterImage" alt="">
+          </div>
+          <div class="degreeAfterHigh pt-4 ">
+            <p class="h3 afterHighTemp"> 37.2°C</p>
+          </div>
+          <div class="degreeAfterLow  ">
+            <p class="h6 afterLowTemp"> 37.2°C</p>
+          </div>
+          <div class="afterDescription p-3 text-primary">Sunny</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/index.js"></script>
+</body>
+
+</html>
